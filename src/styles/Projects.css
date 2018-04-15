@@ -1,0 +1,157 @@
+
+
+.projects-section{
+    background: #3c3c3c;
+    border: 1px solid transparent;
+    margin-top: 14px;
+}
+
+.projects-section h1{
+    text-align: center;
+    margin: 0;
+    background: #00000069;
+    padding: 13px 0;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0px -9px 1px #000000a1;
+    color: white; 
+}
+
+.projects-section h2{
+    font-family: cursive;
+}
+
+.projects-section ul{
+    margin: 0; 
+}
+
+.projects-section ul:last-child{
+    margin-bottom: 1px; 
+}
+
+.projects-li-bg-img{
+    background-image: url(../images/texture-exp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-li-item{
+    text-align: center; 
+    color: white;
+    padding: 44px 5px;
+    background: linear-gradient(to bottom right, #0000003d,#3a3a3a61,#0000003b);
+    margin: 0 auto 37px;
+    border-radius: 6px;
+}
+
+
+
+.btn-div{
+    margin-top: 32px; 
+}
+
+.projects-section button{
+    background: transparent;
+    border-radius: 26px;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    text-align: center;
+    margin: 0 15px;
+    -webkit-transition: background-color 300ms linear;
+    -moz-transition: background-color 300ms linear;
+    -o-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+
+}
+
+.projects-section button:hover{
+    background-color:#ffffff0f; ;
+}
+
+.projects-section img{
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 29px auto; 
+    box-shadow: -9px -7px 14px black;
+    border-radius: 2px;   
+    -webkit-transition: transform 500ms linear, box-shadow 500ms ease-out;
+    -moz-transition: transform 500ms linear, box-shadow 500ms ease-out;
+    -o-transition: transform 500ms linear, box-shadow 500ms ease-out;
+    transition: transform 500ms linear, box-shadow 500ms ease-out;
+}
+
+.projects-section img:hover{
+    transform: rotateY(66deg);
+    box-shadow: -80px -5px 17px #00000080;
+}
+
+.projects-section a{
+    display: inline-block; 
+    color: white; 
+    padding: 13px 37px;
+    font-weight: 700;
+    -webkit-transition:  color 300ms linear;
+    -moz-transition:  color 300ms linear;
+    -o-transition: color 300ms linear;
+    -ms-transition:  color 300ms linear;
+    transition: color 300ms linear;
+
+}
+
+.projects-section a:hover{
+    color: black; 
+    text-shadow: 2px 0px 25px white;
+}
+
+@media only screen and (min-width: 768px) {
+    .project-li-item{
+        font-size: 21px;
+        line-height: 41px;
+    }
+    .projects-li-bg-img{
+    background-image: url(../images/texture-exp-md.jpg); 
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .projects-section{
+        height: 2000px;
+    }
+    .projects-section h1{
+
+        font-size: 33px;
+    }
+    .projects-section ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .li-container{
+        width: 23%;
+        height: 483px;
+        margin: 34px 0;
+        border-radius: 9px; 
+        transition: transform 1s ease-in;
+    }
+    .project-li-item{
+        padding: 0 6px;
+    }
+
+    .project-li-item h2{
+        margin: 0;
+        display: flex;
+        align-items: center;
+        height: 130px;
+        justify-content: center;
+    }
+    .project-li-item img{
+        margin: 0 auto; 
+    }
+    .project-li-item span{
+        font-size: 1em; 
+        display: none; 
+    }
+}
