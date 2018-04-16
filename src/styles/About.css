@@ -37,45 +37,10 @@
     line-height: 33px;
     font-size: 24px;
     font-weight: 600;
-    background: black;
-    animation: reveal 1s;
-    animation-delay: 1.5s; 
-    animation-fill-mode: forwards; 
+    background: white;
     font-family: cursive; 
 }
 
-@keyframes reveal{
-    from{
-        background: black;
-    }
-    to{
-        background: white;
-    }
-}
-
-.about-section  .classified{
-    position: absolute; 
-    transform: rotate(45deg);
-    z-index: 101; 
-    top: 59%;
-    right: 0;
-    left: 0;
-    color: red;
-    opacity: 1;
-    font-size: 49px;
-    animation: blur-out 2s;
-    animation-delay: 1s; 
-    animation-fill-mode: forwards; 
-}
-
-@keyframes blur-out{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
 
 @media only screen and (min-width: 768px) {
     .about-pic{

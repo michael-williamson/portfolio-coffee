@@ -79,7 +79,6 @@ class About extends Component{
                     and I love watersports.  Developing websites challenges the artistic side of 
                     me as well as the logical.  That's mostly why I love it.    
                 </span> 
-                <h2 className="classified">CLASSIFIED</h2>
             </section>
         );
     }
