@@ -1,5 +1,12 @@
 let projects =  [
         {
+            "title": "Wordpress Custom Theme",
+            "description":"Wanted to see what al the fuss was about so I learned how to build a wordpress theme complete with plugins and widgets along with Bootstrap 4.",
+            "site":"http://www.wpflippertheme.com",
+            "code":"https://github.com/michael-williamson/wordpress_freedive_theme",
+            "image":"/images/wpflippertheme.jpg"
+        },        
+        {
             "title": "Brewpub Site",
             "description":"An experimental design for what a brewpub website would like with promotions ,list of what's on tap, and what events are coming soon.",
             "site":"https://michael-williamson.github.io/frontier-brew-pub/",

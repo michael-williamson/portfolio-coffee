@@ -26,8 +26,10 @@ class Projects extends Component{
     render(){
         return(
             <section className="projects-section" id="projects-section">
+                <div className="overlay">
                 <h1>Apps and Sites</h1>
                 <ul>{this.displayProjects()}</ul>
+                </div> 
             </section>
         );
     }

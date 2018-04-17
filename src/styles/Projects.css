@@ -2,9 +2,17 @@
 
 .projects-section{
     background: #3c3c3c;
+    /* background-image: url(../images/front_porch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed; */
     border: 1px solid transparent;
     margin-top: 14px;
 }
+
+/* .projects-section .overlay{
+    background-color: grey; 
+} */
 
 .projects-section h1{
     text-align: center;
