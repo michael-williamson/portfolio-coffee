@@ -15,14 +15,18 @@ header{
 }
 
 header.bg-img{
-    background-image: url(../../src/images/candle.jpg); 
+    /* background-image: url(../../src/images/candle.jpg); 
     background-repeat: no-repeat;
+    background-size: cover;  */
+    background-image: url(./../images/whitesands.jpg);
+    background-repeat: no-repeat; 
     background-size: cover; 
+    background-attachment: fixed; 
 }
 
 .header-overlay{
     position: absolute;
-    background: linear-gradient(to bottom right, #3e3e3e3b, #808080f2,#3e3e3e80);
+    background: linear-gradient(to bottom right, #3e3e3e3b, #80808094,#3e3e3e00);
     top: 0;
     left: 0; 
     height: 100vh;
@@ -260,7 +264,8 @@ header .social-icons-div a {
 
 @media (min-width: 1000px){
     header.bg-img{
-        background-image: url(../../src/images/candle-lg.jpg); 
+        /* background-image: url(../../src/images/candle-lg.jpg);  */
+        background-image: url(./../images/whitesands.jpg);
         background-size: 100% 100%; 
     }
     header{

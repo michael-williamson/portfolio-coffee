@@ -22,7 +22,7 @@ class Header extends Component{
                 <span className="span1">Artistic concepts; </span>
                 <span className="span2"> logical design;</span>
                 <span className="span3">Check out some of my projects below!</span> 
-                <i className="fa fa-arrow-down"></i>
+                <a href="#projects-section"> <i className="fa fa-arrow-down"></i></a>
                 </div> 
             </header>
 

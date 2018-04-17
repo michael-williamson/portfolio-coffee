@@ -11,10 +11,10 @@ class Projects extends Component{
                 <li className="project-li-item">
                     <h2>{item.title}</h2>
                     <img alt="screenshots of projects" src={process.env.PUBLIC_URL + item.image}/> 
-                    <span>{item.description}</span>
+                    <span>{item.description}</span>  
                     <div className="btn-div">
-                        <button><a href={item.site}>Site</a></button> 
-                        <button><a href={item.code}>Code</a></button>   
+                        <button><a href={item.site} target="_blank">Site</a></button> 
+                        <button><a href={item.code} target="_blank">Code</a></button>   
                     </div> 
                 </li>
                 </div> 
@@ -25,7 +25,7 @@ class Projects extends Component{
 
     render(){
         return(
-            <section className="projects-section">
+            <section className="projects-section" id="projects-section">
                 <h1>Apps and Sites</h1>
                 <ul>{this.displayProjects()}</ul>
             </section>
