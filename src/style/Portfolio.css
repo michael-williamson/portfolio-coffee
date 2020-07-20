@@ -3,36 +3,23 @@
 }
 
 .portfolio-section h1{
-    text-align: center; 
-    background: #EFE9BD; 
-    color: #27240c; 
-    /*same height as about section h1*/
-    height: 68px;
+    text-align: center;
+    background: #ebff9b52;
+    /* height: 68px; */
+    color: #27240c;
+    margin-bottom: 0;
+    width: 177px;
+    margin: 6px auto;
+    border-radius: 73px;
+    font-family: cursive;
 }
 
-.portfolio-section h1:before {
-    display: inline-block;
-    margin: 0 20px 13px 0;
-    height: 2px;
-    content: " ";
-    text-shadow: none;
-    background-color: rgb(36, 36, 36);
-    width: 50px;
-}
+
 
 .portfolio-section h1{
     text-align: center; 
 }
 
-.portfolio-section h1:after{
-    display: inline-block;
-    margin: 0 0 13px 20px;
-    height: 2px;
-    content: " ";
-    text-shadow: none;
-    background-color: rgb(36, 36, 36);
-    width: 50px;
-}
 
 .card-display-projects{
     width: 90%;
