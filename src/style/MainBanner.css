@@ -51,3 +51,31 @@
     }
 }
 
+
+
+.mainSquare {
+    position: relative;
+    width: 200px;
+    border: 2px solid grey;
+    border-style: dashed;
+    margin: 30px auto;
+    height: 213px;
+}
+
+.shapeOne {
+    height: 170px;
+    width: 159px;
+    border: 1px solid #0089ff;
+    position: absolute;
+    left: 50%;
+    top: 50%;  
+}
+
+.shapeTwo {
+    height: 151px;
+    width: 144px;
+    border: 1px solid #ff000063;
+    position: absolute;
+    right: 64%;
+    top: 12%;
+}
