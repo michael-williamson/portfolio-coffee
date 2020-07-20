@@ -1,8 +1,8 @@
 /* media queries further down */
 
 .header{
-    background-color: #5F671D;
-    color: #cacaca;
+    background-color: white;
+    color: black;
     position: sticky;
     top: 0;
     height: 75px;
