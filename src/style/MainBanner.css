@@ -1,0 +1,52 @@
+.main-banner{
+    height: 100vh; 
+    background-image: url(../images/apple.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.name-title-div{
+    padding: 43px 0 0;
+}
+
+.name-title{
+    font-size: 3em;
+    letter-spacing: -2px;
+    background: #ffffff4d;
+    padding: 0 3px 0 5px;
+}
+
+.main-banner .h4{
+    margin: 20px 0 0; 
+    color: #209048; 
+}
+
+.bg-secondary {
+    background-color:rgb(54, 54, 54); 
+}
+
+@media(min-width: 768px){
+    /*this is important to match about div*/
+    .main-banner{
+        height: 810px;
+    }
+    .name-title{
+        font-size: 6em; 
+    }
+    .main-banner .h4{
+        font-size: 3em;
+    }
+}
+
+@media (min-width:1000px){
+    .main-banner .h4{
+        color: #fde8e8;
+        background-color: #516600a3;
+        width: 259px;
+        padding: 14px;
+        border-radius: 1px; 
+    }
+}
+

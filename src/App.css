@@ -1,0 +1,12 @@
+#root {
+    background-color: #98a058; 
+}
+
+@media (min-width: 1000px){
+    .App{
+        max-width: 90%;
+        margin: 0 auto;
+        background: #902700; 
+
+    }
+}
