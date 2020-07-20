@@ -11,9 +11,11 @@ class About extends Component {
                     <div className="rounded mx-auto img-div">
                         <img src={Colombia} alt="guy looking across the sky" className="rounded"/>
                     </div>
-                    <span>I value the little things in life. I love watersports. Developing websites
+                    <div className="aboutSpan">
+                    <span>"I value the little things in life. I love watersports. Developing websites
                         challenges the artistic side of me as well as the logical. That's mostly why I
-                        love it!</span>
+                        love it!"</span>
+                </div>       
                 </div>
                 <div className="col-md-6">
                     <h6>Technologies</h6>
