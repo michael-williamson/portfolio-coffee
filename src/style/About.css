@@ -3,13 +3,18 @@
 }
 
 .about-section h1{
-    text-align: center; 
-    background: #EFE9BD; 
-    height: 68px; 
-    color: #27240c; 
+    text-align: center;
+    background: #ebff9b52;
+    /* height: 68px; */
+    color: #27240c;
+    margin-bottom: 0;
+    width: 177px;
+    margin: 6px auto;
+    border-radius: 73px;
+    font-family: cursive;
 }
 
-.about-section h1:before {
+/* .about-section h1:before {
     display: inline-block;
     margin: 0 20px 13px 0;
     height: 2px;
@@ -27,15 +32,16 @@
     text-shadow: none;
     background-color: rgb(36, 36, 36);
     width: 50px;
-}
+} */
 
 .about-section .card-display{
     text-align: center;
 }
 
 .about-section .img-div{
-    width: 100px;
-    height: 100px;
+    height: 232px;
+    border: groove;
+    border-color: #cda65cd1;
 }
 
 .about-section img{
@@ -72,6 +78,27 @@
 
 .about-section ul{
     text-align: center; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-section li {
+    list-style: none;
+    border: 1px solid black;
+    margin: 11px 14px;
+    padding: 5px 5px;
+    box-shadow: 5px 5px #00b8ff38;
+}
+
+.aboutSpan {
+    background-color: #f7f383;
+    padding: 10px 5px;
+}
+
+.about-section span {
+
+    font-family: 'Kalam', cursive;
+/* font-family: 'Permanent Marker', cursive; */
 }
 
 @media(min-width: 768px){
@@ -104,5 +131,13 @@
 @media (min-width: 1000px){
     .about-section{
         width: 68%;
+    }
+    .about-section .img-div{
+        width: 100px;
+        height: 100px;
+        border: groove;
+        border-width: 18px;
+        width: 214px;
+        border-color: #cda65cd1;
     }
 }
