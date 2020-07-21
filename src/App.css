@@ -1,6 +1,10 @@
 /* #root {
     background-color: #98a058; 
 } */
+.App{
+    overflow: hidden;
+    /* so that nav being absolute won't effect width of screen */
+}
 
 @media (min-width: 768px){
     .App{

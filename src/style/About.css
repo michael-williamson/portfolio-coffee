@@ -11,7 +11,7 @@
     width: 177px;
     margin: 6px auto;
     border-radius: 73px;
-    font-family: cursive;
+    font-family: 'Architects Daughter', cursive;
 }
 
 /* .about-section h1:before {
@@ -101,14 +101,19 @@
 /* font-family: 'Permanent Marker', cursive; */
 }
 
+@media only screen and (min-width: 500px) and (max-width: 1000px) and (orientation: landscape) {
+    .about-section .img-div {
+        width: 50%;
+    }
+    .aboutSpan{
+        margin: 0 6px;
+    }
+  }
+
 @media(min-width: 768px){
     .about-section{
         position: inherit;
         width: 86%;
-        /*this is set to main-banner height*/
-        /* top: 709px;
-        left: 0;
-        right: 0; */
         margin: 20px auto 0;
         background: white;
         z-index: 1000;
@@ -130,11 +135,28 @@
     }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) and (max-height:770px){
+    .about-section{
+        width: 91%;
+        position: inherit;
+        margin-top: 42px;
+        padding: 16px 0 48px;
+    }
+    .about-section .img-div{
+        height: 64%;
+        border: groove;
+        border-width: 18px;
+        width: 80%;
+        border-color: #cda65cd1;
+    }
+}
+
+@media (min-width: 1000px) and (min-height: 771px){
     .about-section{
         width: 68%;
         position: inherit;
         margin-top: 42px;
+        padding: 16px 0 48px;
     }
     .about-section .img-div{
         height: 64%;
