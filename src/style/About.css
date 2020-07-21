@@ -103,19 +103,21 @@
 
 @media(min-width: 768px){
     .about-section{
-        position: absolute;
+        position: inherit;
         width: 86%;
         /*this is set to main-banner height*/
-        top: 709px;
+        /* top: 709px;
         left: 0;
-        right: 0;
-        margin: 0 auto;
+        right: 0; */
+        margin: 20px auto 0;
         background: white;
         z-index: 1000;
+        border: 1px dashed black;
     }
     .about-section h1{
     /* same as Portfolio header*/
         height: 68px;
+        background-color: white;
     }
 
     .about-section .img-div{
@@ -131,13 +133,14 @@
 @media (min-width: 1000px){
     .about-section{
         width: 68%;
+        position: inherit;
+        margin-top: 42px;
     }
     .about-section .img-div{
-        width: 100px;
-        height: 100px;
+        height: 64%;
         border: groove;
         border-width: 18px;
-        width: 214px;
+        width: 80%;
         border-color: #cda65cd1;
     }
 }

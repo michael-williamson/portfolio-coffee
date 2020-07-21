@@ -2,11 +2,18 @@
     background-color: #98a058; 
 } */
 
+@media (min-width: 768px){
+    .App{
+        max-width: 90%;
+        margin: 0 auto;
+        border-left: 1px solid #00000038;
+        border-right: 1px solid #00000038;
+    }
+}
 @media (min-width: 1000px){
     .App{
         max-width: 90%;
         margin: 0 auto;
-        background: #902700; 
 
     }
 }
