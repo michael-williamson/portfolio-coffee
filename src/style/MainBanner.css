@@ -3,8 +3,10 @@
     background-image: url(../images/appleCrop.png);
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-attachment: fixed;
-    background-position: 110%;
 }
 
 
@@ -28,12 +30,28 @@
     background-color:rgb(54, 54, 54); 
 }
 
-@media(min-width: 768px){
+@media only screen and (min-width: 500px) and (max-height: 500px)  {
+    .main-banner{
+        height: 510px;
+    }
+  }
+
+  @media only screen 
+  and (orientation : landscape) 
+{
+    .main-banner{
+        height: 510px;
+    }
+}
+
+@media(min-width: 768px) and (min-height: 500px){
     /*this is important to match about div*/
     .main-banner{
         height: 100vh;
-        background-size: 240%;
-        background-position: 97%;
+        background-size: cover; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;        
     }
     .name-title{
         font-size: 6em; 
@@ -49,7 +67,7 @@
         height: 100vh;
     }
     .main-banner .h4{
-        color: #fde8e8;
+        color: #f5f5f5;
         background-color: #516600a3;
         width: 259px;
         padding: 14px;

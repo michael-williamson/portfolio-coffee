@@ -4,6 +4,7 @@
     background-color: white;
     color: black;
     position: sticky;
+    position: -webkit-sticky; /* Safari */
     top: 0;
     height: 75px;
     z-index: 100000;
@@ -48,8 +49,8 @@
     padding:0; 
     opacity: 1;
     background: #fffffffa;
-    border-left: 1px black;
-    border-left-style: dashed;
+    /* border-left: 1px black;
+    border-left-style: dashed; */
 }
 
 .header ul{
