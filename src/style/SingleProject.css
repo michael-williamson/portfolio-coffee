@@ -1,39 +1,61 @@
 .single-project-page{
-    padding-top: 45px; 
-    background: url(../images/apple.jpg); 
+    padding: 22px 0;
+    background: url(../images/appleCrop.png); 
     background-repeat: no-repeat;
     background-size: 100% 100%; 
 }
 
 .project-item{
     text-align: center;
-    background: #eb7549cc;
+    background: #fbfbfbcc;
     width: 92%;
-    margin: 62px auto 0;
-    padding: 11px 4px;
+    margin: 1px auto 0;
+    padding: 12px 10px 33px;
 }
 
 .project-item h1{
-    background: #902700; 
-    color: lightgray;
+    background: #444444;
+    color: white;
+    padding: 10px 0;
+}
+
+.project-item img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #0000001a;
 }
 
 .project-item .lead{
     font-size: 1.25rem;
     font-weight: 300;
-    background: #ffb195;
+    background: #ffffff;
     width: 80%;
     margin: 14px auto;
     padding: 16px 15px;
     border-radius: 2px;
-    color: #8d0000;
+    color: #ff0e0e;
     font-weight: 600;
+    border: 1px solid #00000014;
+}
+
+.btn-lg {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    background: aquamarine;
+    width: 226px;
+    margin-bottom: 14px;
+}
+
+.project-item button a{
+    text-decoration: none; 
+    display: block;
 }
 
 @media(min-width: 768px){
     .single-project-page{
         padding-bottom: 140px; 
-        background-size: 174% 100%; 
+        background-size: 100% 100%; 
     }
     .project-item{
         padding: 0 0;  
@@ -43,17 +65,9 @@
         height: 66px; 
     }
     .project-item button{
-        background-color: #007777; 
-        color: white; 
         cursor: pointer;
     }
-    .project-item button a{
-        color:white; 
-        text-decoration: none; 
-    }
-    .to-main{
-        color: #014360; 
-    }
+
     .project-item button:hover{
         background-color: #46B3B3;
     }
@@ -70,7 +84,7 @@
 
     .project-item{
         width: 60%; 
-    background: #eb7449;
+        background: #fbfbfbcc;
 
     }
 
