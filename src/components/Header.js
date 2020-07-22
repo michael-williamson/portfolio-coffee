@@ -61,8 +61,8 @@ class Header extends Component {
                         .collapse
                         .toString()}`}>
                         <ul>
-                            <Link to="/#about-section"><i className="fa fa-user-circle-o"></i>About</Link>
-                            <Link to="/#portfolio-section"><i className="fa fa-tv"></i>Portfolio</Link>
+                            <li><Link to="/#about-section"><i className="fa fa-user-circle-o"></i>About</Link></li>
+                            <li><Link to="/#portfolio-section"><i className="fa fa-tv"></i>Portfolio</Link></li>
                             <li
                                 onClick={() => {
                                 jump('#footer-section');
@@ -73,7 +73,7 @@ class Header extends Component {
                         onClick={this
                         .collapseDiv
                         .bind(this)}>
-                        place
+                        <i className="fa fa-reorder"></i>
                     </button>
                 </div>
             );
