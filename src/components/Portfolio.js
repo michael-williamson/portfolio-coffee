@@ -8,7 +8,7 @@ class Portfolio extends Component {
     displayProjects(){
         return projects.map((project,index)=>{
             return(
-                <div className="card-display-projects" id={project.title} key={index}>
+                <div className="card-display-projects" id={`position${index}`} key={index}>
                     <img alt="screenshots of projects" src={process.env.PUBLIC_URL + project.image}/>
                     <div className="overlay">
                         <h5>{project.title}</h5>
