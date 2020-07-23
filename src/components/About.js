@@ -12,7 +12,7 @@ class About extends Component {
                         <img src={Colombia} alt="guy looking across the sky" className="rounded"/>
                     </div>
                     <div className="aboutSpan">
-                    <span>"I value the little things in life. I love watersports. Developing websites
+                    <span>"I value the little things in life. Developing websites
                         challenges the artistic side of me as well as the logical. That's mostly why I
                         love it!"</span>
                 </div>       

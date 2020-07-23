@@ -47,9 +47,14 @@
     margin-bottom: 14px;
 }
 
-.project-item button a{
+.project-item button a{  
     text-decoration: none; 
     display: block;
+}
+
+.project-item button:hover, .to-main:hover,
+.project-item button:focus, .to-main:focus{
+    background-color: #46B3B3;
 }
 
 @media(min-width: 768px){
@@ -68,9 +73,7 @@
         cursor: pointer;
     }
 
-    .project-item button:hover{
-        background-color: #46B3B3;
-    }
+
 
     
 
