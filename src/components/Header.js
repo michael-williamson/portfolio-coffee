@@ -22,6 +22,7 @@ class Header extends Component {
         return (
             <div className="container-fluid row header .is-sticky">
                 <h4 className="text-secondary">MW Designs</h4>
+                <a id="header"></a>
                 <nav
                     className={`nav-bar col-md-5 ${this
                     .state
@@ -30,11 +31,11 @@ class Header extends Component {
                     <ul>
                         <li
                             onClick={() => {
-                            jump('#about-section');
+                            jump('#about-section-header');
                         }}><i className="fa fa-user-circle-o"></i>About</li>
                         <li
                             onClick={() => {
-                            jump('#portfolio-section');
+                            jump('#portfolio-section-header');
                         }}><i className="fa fa-tv"></i>Portfolio</li>
                         <li
                             onClick={() => {
@@ -55,14 +56,15 @@ class Header extends Component {
         return(
                 <div className="container-fluid row header .is-sticky">
                     <h4 className="text-secondary">MW Designs</h4>
+                    <a id="header"></a>
                     <nav
                         className={`nav-bar col-md-5 ${this
                         .state
                         .collapse
                         .toString()}`}>
                         <ul>
-                            <li><Link to="/#about-section"><i className="fa fa-user-circle-o"></i>About</Link></li>
-                            <li><Link to="/#portfolio-section"><i className="fa fa-tv"></i>Portfolio</Link></li>
+                            <li><Link to="/#about-section-header" className="linkAnchorTag"><i className="fa fa-user-circle-o"></i>About</Link></li>
+                            <li><Link to="/#portfolio-section-header" className="linkAnchorTag"><i className="fa fa-tv"></i>Portfolio</Link></li>
                             <li
                                 onClick={() => {
                                 jump('#footer-section');

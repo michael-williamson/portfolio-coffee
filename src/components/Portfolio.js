@@ -31,7 +31,7 @@ class Portfolio extends Component {
 
     render() {
         return (
-            <div className="portfolio-section" id="portfolio-section">
+            <div className="portfolio-section" id="portfolio-section-header">
                 <h1>Portfolio</h1>
                 <div className="projects-div">
                     {this.displayProjects()}

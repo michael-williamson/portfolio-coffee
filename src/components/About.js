@@ -5,8 +5,9 @@ import '../style/About.css';
 class About extends Component {
     render() {
         return (
-            <div className="about-section row" id="about-section">
+            <div className="about-section row">
                 <h1 className="col-md-12">About</h1>
+                <a id="about-section-header"></a>
                 <div className="card-display col-md-6">
                     <div className="rounded mx-auto img-div">
                         <img src={Colombia} alt="guy looking across the sky" className="rounded"/>

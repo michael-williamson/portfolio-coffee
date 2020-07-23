@@ -8,7 +8,7 @@ class Footer extends Component {
         if(this.props.location.pathname === "/"){
            return( <button
             onClick={() => {
-            jump('#main-banner');
+            jump('#header');
         }}>top</button>);
         }else{
             return; 

@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 class MainBanner extends Component {
     render() {
         return (
-            <div className="main-banner container-fluid" id="main-banner">
+            <div className="main-banner container-fluid">
                 <div className="name-title-div">
                     <div className="name-title">Michael Williamson</div>
                 </div> 
