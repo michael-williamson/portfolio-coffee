@@ -6,8 +6,7 @@ class About extends Component {
     render() {
         return (
             <div className="about-section row">
-                <h1 className="col-md-12">About</h1>
-                <a id="about-section-header"></a>
+                <h1 className="col-md-12" id="about-section-header">About</h1>
                 <div className="card-display col-md-6">
                     <div className="rounded mx-auto img-div">
                         <img src={Colombia} alt="guy looking across the sky" className="rounded"/>

@@ -12,9 +12,8 @@ import BadPath from './components/BadPath';
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
-        <BrowserRouter>
-          <div>
             <Route path="/" component={Header}/>
           <Switch>
               <Route exact path="/" component={Landing}/> 
@@ -22,9 +21,8 @@ class App extends Component {
               <Route path="" component={BadPath}/>
           </Switch>    
           <Route path="/" component={Footer}/>
-          </div> 
-        </BrowserRouter> 
       </div>
+      </BrowserRouter> 
     );
   }
 }

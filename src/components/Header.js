@@ -4,14 +4,12 @@ import jump from 'jump.js';
 import '../style/Header.css';
 
 class Header extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            collapse: false
-        }
-    }
 
-    collapseDiv() {
+    state = {
+            collapse: false}
+
+
+    collapseDiv =() =>{
         this.setState(prevState => ({
             collapse: !prevState.collapse
         }));
@@ -20,9 +18,8 @@ class Header extends Component {
     render() {
         if(this.props.location.pathname === "/"){
         return (
-            <div className="container-fluid row header .is-sticky">
+            <div className="container-fluid row header .is-sticky"  id="header">
                 <h4 className="text-secondary">MW Designs</h4>
-                <a id="header"></a>
                 <nav
                     className={`nav-bar col-md-5 ${this
                     .state
@@ -31,22 +28,24 @@ class Header extends Component {
                     <ul>
                         <li
                             onClick={() => {
-                            jump('#about-section-header');
+                            jump('#about-section-header');console.log("this is firing",this.collapseDiv);
+                             this.collapseDiv()
                         }}><i className="fa fa-user-circle-o"></i>About</li>
                         <li
-                            onClick={() => {
-                            jump('#portfolio-section-header');
-                        }}><i className="fa fa-tv"></i>Portfolio</li>
+                            onClick={()=>{
+                            jump('#portfolio-section-header')
+                            this.collapseDiv()
+                            }}><i className="fa fa-tv"></i>Portfolio</li>
                         <li
-                            onClick={() => {
-                            jump('#footer-section');
-                        }}><i className="fa fa-edit"></i>Contact</li>
+                            onClick={()=>{
+                                jump('#footer-section')
+                                this.collapseDiv()
+                              }}><i className="fa fa-edit"></i>Contact</li>
                     </ul>
                 </nav>
                 <button
                     onClick={this
-                    .collapseDiv
-                    .bind(this)}>
+                    .collapseDiv}>
                     <i className="fa fa-reorder"></i>
                 </button>
             </div>
@@ -54,27 +53,27 @@ class Header extends Component {
     }
     else{
         return(
-                <div className="container-fluid row header .is-sticky">
+                <div className="container-fluid row header .is-sticky"  id="header">
                     <h4 className="text-secondary">MW Designs</h4>
-                    <a id="header"></a>
                     <nav
                         className={`nav-bar col-md-5 ${this
                         .state
                         .collapse
                         .toString()}`}>
                         <ul>
-                            <li><Link to="/#about-section-header" className="linkAnchorTag"><i className="fa fa-user-circle-o"></i>About</Link></li>
-                            <li><Link to="/#portfolio-section-header" className="linkAnchorTag"><i className="fa fa-tv"></i>Portfolio</Link></li>
+                            <li onClick={this.collapseDiv}><Link to="/#about-section-header" className="linkAnchorTag"><i className="fa fa-user-circle-o"></i>About</Link></li>
+                            <li onClick={this.collapseDiv}><Link to="/#portfolio-section-header" className="linkAnchorTag"><i className="fa fa-tv"></i>Portfolio</Link></li>
                             <li
                                 onClick={() => {
                                 jump('#footer-section');
+                                this.collapseDiv()
                             }}><i className="fa fa-edit"></i>Contact</li>
                         </ul>
                     </nav>
                     <button
                         onClick={this
                         .collapseDiv
-                        .bind(this)}>
+                        }>
                         <i className="fa fa-reorder"></i>
                     </button>
                 </div>
