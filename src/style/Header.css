@@ -14,10 +14,25 @@
     justify-content: space-between;
 }
 
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
 .header h4{
     display: inline-block;
     width: 40%;
     height: 65px; 
+    background: linear-gradient(90deg, #c4ff65, #e0ff36, #87dd4f);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 13s linear infinite;
+    -webkit-background-clip: text;
+    color: rgba(255, 255, 255, 0);
 }
 
 .header button{
@@ -48,8 +63,6 @@
     padding:0; 
     opacity: 1;
     background: #fffffffa;
-    /* border-left: 1px black;
-    border-left-style: dashed; */
 }
 
 .header ul{
@@ -64,6 +77,14 @@
     width: 100%; 
     padding: 44px 0;
     cursor: pointer;
+}
+.header li:hover, .header li:focus,
+.header .linkAnchorTag:hover, .header .linkAnchorTag:focus{
+    color: #2e6f42; 
+}
+
+.header .linkAnchorTag {
+    color: black; 
 }
 
 .header nav .fa{
@@ -128,24 +149,15 @@
         align-items: center;
         justify-content: center;
     }
-    .header li:hover{
-        color: #ffca9f; 
-    }
-    
-
     .header .linkAnchorTag{
         width: 100%;
         text-decoration: none; 
         border-bottom: none;
         color: black;
-        margin: 0 19px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    }
-    .header .linkAnchorTag:hover{
-        color: #ffca9f;  
     }
     .header button{
         display: none; 
@@ -172,11 +184,5 @@
     }
     .header li{
         color:black; 
-    }
-    .header li:hover{
-        color: #ffca9f; 
-    }
-    .header .linkAnchorTag:hover{
-        color: #ffca9f;  
     }
 }

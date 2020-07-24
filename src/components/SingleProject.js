@@ -6,7 +6,6 @@ import '../style/SingleProject.css';
 class SingleProject extends Component {
 
     displayProject() {
-        console.log(this.props)
         return  projects.map((project,index) => {
             if (this.props.match.params.name === project.title) {
                 return (
@@ -23,10 +22,10 @@ class SingleProject extends Component {
                         </div>
                         <div>
                             <button className="btn btn-lg">
-                                <a href={project.site} target="_blank">Site</a> 
+                                <a href={project.site} target="_blank">Check it out<i className="fa fa-hand-o-right"></i></a> 
                             </button> 
                         </div>
-                        <Link to={`/#position${index}`} className="btn btn-lg to-main">Back to Main</Link> 
+                        <Link to={`/#position${index}`} className="btn btn-lg to-main">Back to Main<i className="fa fa-home"></i></Link> 
                     </div>
                 );
             }
