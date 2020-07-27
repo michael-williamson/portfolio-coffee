@@ -95,8 +95,8 @@
 @media(min-width: 768px){
     .single-project-page{
         padding-bottom: 140px; 
-        background: url(../images/appleCropLG.png); 
-        background-size: 100% 100%; 
+        padding-top: 71px;
+        background: none; 
     }
     .project-item{
         padding: 0 0;  
@@ -108,17 +108,11 @@
     .project-item button{
         cursor: pointer;
     }
-
-
-
     
-
 }
 
 @media(min-width: 768px){
     .single-project-page{
-        background-size: 100% 100%; 
-        background-attachment: fixed; 
     }
 
     .project-item{

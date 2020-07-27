@@ -57,11 +57,12 @@
     /*this is important to match about div*/
     .main-banner{
         height: 100vh;
-        background-image: url(../images/appleCropLG.png);
+        background-image: none;
+        /* background-image: url(../images/appleCropLG.png);
         background-size: cover; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
-        -o-background-size: cover;        
+        -o-background-size: cover;         */
     }
     .name-title{
         font-size: 6em; 
