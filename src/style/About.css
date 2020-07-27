@@ -111,12 +111,19 @@
   }
 
 @media(min-width: 768px){
+    .about-section-div{
+        width: 100%; 
+        background: white;
+        height:600px; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
     .about-section{
         position: inherit;
         width: 86%;
         margin: 20px auto 0;
         background: white;
-        z-index: 1000;
+        /* z-index: 1000; */
         border: 1px dashed black;
     }
     .about-section h1{

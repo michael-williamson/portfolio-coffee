@@ -108,21 +108,23 @@
 
 @media(min-width: 768px){
     .portfolio-section{
-        padding-top: 100px;
+        background-color: transparent;
     }
     .portfolio-section h1{
-        width: 97%;
-        margin: 0 auto; 
+        width: 100%;
+        /* margin: 0 auto;  */
         /* same as Portfolio header*/
         height: 68px; 
         background-color: white;
+        border-radius: 0px;
+        margin: 0;
     }
     .projects-div{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content:space-around;
-        background: #c1debc;
+        background: transparent;
     }
 
     .card-display-projects{
@@ -137,7 +139,7 @@
 
 @media(min-width: 1000px){
     .portfolio-section{
-        padding-top: 96px;
+        /* padding-top: 96px; */
     }
     .portfolio-section h1{
         width: 100%; 

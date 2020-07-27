@@ -5,6 +5,7 @@ import '../style/About.css';
 class About extends Component {
     render() {
         return (
+            <div className="about-section-div">
             <div className="about-section row">
                 <h1 className="col-md-12" id="about-section-header">About</h1>
                 <div className="card-display col-md-6">
@@ -35,6 +36,7 @@ class About extends Component {
                         <li>Wordpress Theme Construction</li>
                     </ul>
                 </div>
+            </div>
             </div>
         );
     }

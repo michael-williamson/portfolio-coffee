@@ -6,7 +6,8 @@ import '../style/Header.css';
 class Header extends Component {
 
     state = {
-            collapse: false}
+            collapse: false
+        }
 
 
     collapseDiv =() =>{
@@ -28,7 +29,7 @@ class Header extends Component {
                     <ul>
                         <li
                             onClick={() => {
-                            jump('#about-section-header');console.log("this is firing",this.collapseDiv);
+                            jump('#about-section-header');
                              this.collapseDiv()
                         }}><i className="fa fa-user-circle-o"></i>About</li>
                         <li
