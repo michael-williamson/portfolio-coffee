@@ -21,8 +21,8 @@ class Footer extends Component {
                 {this.displayButton()}
                 <h4>michaelwilliamsondesigns@gmail.com</h4>
                 <div className="icon-div">
-                <a href="https://github.com/michael-williamson"><i className="fa fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/michael-williamson-b6158913b/"><i className="fa fa-linkedin"></i></a>
+                <a href="https://github.com/michael-williamson" target="_blank"><i className="fa fa-github-square"></i></a>
+                <a href="https://www.linkedin.com/in/michael-williamson-b6158913b/" target="_blank"><i className="fa fa-linkedin"></i></a>
                 </div>
             </div>
         );

@@ -1,5 +1,13 @@
 let projects =  [      
         {
+            "title": "Family Tree",
+            "tech": ["React.js","Redux Form","Redux"],
+            "description":"Form app that displays family members in a family tree form.",
+            "site":"https://michael-williamson.github.io/FAMILY_TREE/",
+            "code":"https://github.com/michael-williamson/FAMILY_TREE",
+            "image":"/images/family_tree.png"
+        },        
+        {
             "title": "Stock Trading App",
             "tech": ["React.js","MongoDB","Express.js"],
             "description":"Full Stack App designed to assist Stock Traders in analyzing and keeping up-to-date with their stock trades",
