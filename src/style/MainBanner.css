@@ -1,123 +1,138 @@
-.main-banner{
-    height: 100vh; 
-    background-image: url(../images/appleCropSM.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-attachment: fixed;
-    animation: bgImageAnimation 30s linear infinite;
+.main-banner {
+  height: 100vh;
+  background-image: url(../images/appleCropSM.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  animation: bgImageAnimation 30s linear infinite;
 }
 
 @keyframes bgImageAnimation {
-    0%   {background-size: 100%;}
-    25%  {background-size: 110%;}
-    50%  {background-size: 115%;}
-    75%  {background-size: 110%;}
-    100% {background-size: 100%;}
+  0% {
+    background-size: 100%;
+  }
+  25% {
+    background-size: 110%;
+  }
+  50% {
+    background-size: 115%;
+  }
+  75% {
+    background-size: 110%;
+  }
+  100% {
+    background-size: 100%;
+  }
 }
 
-
-.name-title-div{
-    padding: 43px 0 0;
-}  
-.name-title{
-    font-size: 3em;
-    letter-spacing: -2px;
-    background: #ffffff4d;
-    padding: 0 3px 0 5px;
+.name-title-div {
+  padding: 43px 0 0;
+}
+.name-title {
+  font-size: 3em;
+  letter-spacing: -2px;
+  background: #ffffff4d;
+  padding: 0 3px 0 5px;
 }
 
-.main-banner .h4{
-    margin: 20px 0 0; 
-    color: #69736c38;
-    text-shadow: #76ff05 2px 2px 1px;
+.main-banner .h4 {
+  margin: 20px 0 0;
+  color: #69736c38;
+  text-shadow: #76ff05 2px 2px 1px;
 }
 
 .bg-secondary {
-    background-color:rgb(54, 54, 54); 
+  background-color: rgb(54, 54, 54);
 }
 
-@media only screen and (min-width: 500px) and (max-height: 500px)  {
-    .main-banner{
-        height: 510px;
-    }
+@media only screen and (min-width: 500px) and (max-height: 500px) {
+  .main-banner {
+    height: 510px;
   }
-
-  @media only screen 
-  and (orientation : landscape) 
-{
-    .main-banner{
-        height: 510px;
-    }
 }
 
-@media(min-width: 768px) and (min-height: 500px){
-    /*this is important to match about div*/
-    .main-banner{
-        height: 100vh;
-        background-image: none;
-        /* background-image: url(../images/appleCropLG.png);
+@media only screen and (orientation: landscape) {
+  .main-banner {
+    height: 510px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 500px) {
+  /*this is important to match about div*/
+  .main-banner {
+    height: 100vh;
+    background-image: none;
+    /* background-image: url(../images/appleCropLG.png);
         background-size: cover; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;         */
-    }
-    .name-title{
-        font-size: 6em; 
-    }
-    .main-banner .h4{
-        font-size: 3em;
-        color: #48f184;
-    }
+  }
+  .name-title {
+    font-size: 6em;
+  }
+  .main-banner .h4 {
+    font-size: 3em;
+    color: #48f184;
+  }
 }
 
-@media (min-width:1000px){
-    .main-banner{
-        height: 100vh;
-    }
-    .main-banner .h4{
-        color: #f5f5f5;
-        text-shadow: #a9a9a9 2px 2px 1px;
-        background-color: #516600a3;
-        width: 259px;
-        padding: 14px;
-        border-radius: 1px; 
-    }
+@media (min-width: 1000px) {
+  .main-banner {
+    height: 100vh;
+  }
+  .main-banner .h4 {
+    color: #f5f5f5;
+    text-shadow: #a9a9a9 2px 2px 1px;
+    background-color: #516600a3;
+    width: 259px;
+    padding: 14px;
+    border-radius: 1px;
+  }
 }
 
-.shapeContainer{
-    margin: 30px auto;
-    position: relative; 
-    height: 300px;
+.shapeContainer {
+  margin: 30px auto;
+  position: relative;
+  height: 300px;
 }
 
 @keyframes mainSquareAnimation {
-    0%   {transform: rotateZ(0deg);}
-    25%  {transform: rotateZ(90deg);}
-    50%  {transform: rotateZ(180deg);}
-    75%  {transform: rotateZ(270deg);}
-    100% {transform: rotateZ(360deg);}
+  0% {
+    transform: rotateZ(0deg);
   }
-  
-
-.mainSquare {
-    position: absolute;
-    width: 200px;
-    border: 2px solid grey;
-    border-style: dashed;
-    margin: 0 auto;
-    top:0; 
-    right:0;
-    left: 0;
-    height: 213px;
-    animation-name: mainSquareAnimation;
-    animation-duration: 300ms;
-    animation-iteration-count: 5;
-    animation-timing-function: ease;
+  25% {
+    transform: rotateZ(90deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  75% {
+    transform: rotateZ(270deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
 
+.mainSquare {
+  position: absolute;
+  width: 200px;
+  border: 2px solid grey;
+  border-style: dashed;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 213px;
+  animation-name: mainSquareAnimation;
+  animation-duration: 300ms;
+  animation-iteration-count: 5;
+  animation-timing-function: ease;
+}
 
 /* @keyframes shapeOneAnimation {
     0%   {transform: rotateZ(0deg);}
@@ -127,66 +142,74 @@
     100% {transform: rotateZ(-360deg);}
   } */
 @keyframes shapeOneAnimation {
-    0%   {transform: rotateZ(0deg);}
-    30%  {transform: rotateZ(-90deg);}
-    50%  {
-        transform: translate(-47%,-14%);
-        height: 100px;
-    }
-    73%  {
-        transform: translate(-47%,-14%);
-        height: 100px;
-    }
-    86%{
-        transform: translate(0%,0%);    
-        height: 170px;   
-    }
-    100% {
-        transform: translate(0%,0%);
-    }
+  0% {
+    transform: rotateZ(0deg);
   }
+  30% {
+    transform: rotateZ(-90deg);
+  }
+  50% {
+    transform: translate(-47%, -14%);
+    height: 100px;
+  }
+  73% {
+    transform: translate(-47%, -14%);
+    height: 100px;
+  }
+  86% {
+    transform: translate(0%, 0%);
+    height: 170px;
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
 
 .shapeOne {
-    height: 170px;
-    width: 159px;
-    border: 1px solid #0089ff;
-    position: absolute;
-    left: 50%;
-    top: 36%;  
-    animation-name: shapeOneAnimation;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
+  height: 170px;
+  width: 159px;
+  border: 1px solid #0089ff;
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  animation-name: shapeOneAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 
 @keyframes shapeTwoAnimation {
-    0%   {transform: scale(2);}
-    30%  {transform: scale(1);}
-    53%  {
-        height: 51px;
-        transform: translate(68%,-12%);
-    }
-    70%  {
-        height: 51px;
-        transform: translate(68%,-12%);
-    }
-    80%  {
-        height: 151px;
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(0,0);
-    }
+  0% {
+    transform: scale(2);
+  }
+  30% {
+    transform: scale(1);
+  }
+  53% {
+    height: 51px;
+    transform: translate(68%, -12%);
+  }
+  70% {
+    height: 51px;
+    transform: translate(68%, -12%);
+  }
+  80% {
+    height: 151px;
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .shapeTwo {
-    height: 151px;
-    width: 144px;
-    border: 1px solid #ff000063;
-    position: absolute;
-    right: 54%;
-    top: 12%;
-    animation-name: shapeTwoAnimation;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease;
+  height: 151px;
+  width: 144px;
+  border: 1px solid #ff000063;
+  position: absolute;
+  right: 54%;
+  top: 12%;
+  animation-name: shapeTwoAnimation;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }

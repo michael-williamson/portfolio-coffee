@@ -1,186 +1,200 @@
 /* media queries further down */
 
-.header{
-    background-color: white;
-    color: black;
-    position: sticky;
-    top: 0;
-    height: 75px;
-    z-index: 100000;
-    text-align: center;
-    margin: 0; 
-    width: 100%; 
-    display: flex;
-    justify-content: space-between;
+.header {
+  background-color: white;
+  color: black;
+  position: sticky;
+  top: 0;
+  height: 75px;
+  z-index: 100000;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes animate {
-    0% {
-      background-position: -500%;
-    }
-    100% {
-      background-position: 500%;
-    }
+  0% {
+    background-position: -500%;
   }
-
-.header h4{
-    display: inline-block;
-    width: 40%;
-    height: 65px; 
-    background: linear-gradient(90deg, #c4ff65, #e0ff36, #87dd4f);
-    background-repeat: no-repeat;
-    background-size: 80%;
-    animation: animate 13s linear infinite;
-    -webkit-background-clip: text;
-    color: rgba(255, 255, 255, 0);
+  100% {
+    background-position: 500%;
+  }
 }
 
-.header button{
-    display: block;
-    position: absolute;
-    top: 14px;
-    right: 21px;
-    background: transparent;
-    border: none;
-    outline: none; 
+.header h4 {
+  display: inline-block;
+  width: 40%;
+  height: 65px;
+  background: linear-gradient(90deg, #c4ff65, #e0ff36, #87dd4f);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 13s linear infinite;
+  -webkit-background-clip: text;
+  color: rgba(255, 255, 255, 0);
 }
 
-.fa-reorder{
-    font-size: 20px;
-    color: rgb(39, 39, 39);
-    border: 2px solid #bfbfbf;
-    padding: 8px;
-    border-radius: 6px;
+.header-logo {
+  width: 200px;
 }
 
-.header nav{
-    width: 200px; 
-    position: absolute;
-    /* top is set to header height!*/
-    top: 75px;
-    right: 0px; 
-    transition: all .25s ease; 
-    padding:0; 
-    opacity: 1;
-    background: #fffffffa;
+.header button {
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  background: transparent;
+  border: none;
+  outline: none;
 }
 
-.header ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; 
-    align-items: center; 
-    margin-bottom: 0; 
+.fa-reorder {
+  font-size: 20px;
+  color: rgb(39, 39, 39);
+  border: 2px solid #bfbfbf;
+  padding: 8px;
+  border-radius: 6px;
 }
 
-.header li{
-    width: 100%; 
-    padding: 44px 0;
-    cursor: pointer;
+.header nav {
+  width: 200px;
+  position: absolute;
+  /* top is set to header height!*/
+  top: 75px;
+  right: 0px;
+  transition: all 0.25s ease;
+  padding: 0;
+  opacity: 1;
+  background: #fffffffa;
 }
-.header li:hover, .header li:focus,
-.header .linkAnchorTag:hover, .header .linkAnchorTag:focus{
-    color: #2e6f42; 
+
+.header ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.header li {
+  width: 100%;
+  padding: 44px 0;
+  cursor: pointer;
+}
+.header li:hover,
+.header li:focus,
+.header .linkAnchorTag:hover,
+.header .linkAnchorTag:focus {
+  color: #2e6f42;
 }
 
 .header .linkAnchorTag {
-    color: black; 
+  color: black;
 }
 
-.header nav .fa{
-    padding-right: 8px;
+.header nav .fa {
+  padding-right: 8px;
 }
 
-.false{
-    opacity: 0;
-    transform: translateX(200px);
+.false {
+  opacity: 0;
+  transform: translateX(200px);
+}
 
-}   
+.true {
+  opacity: 1;
+  transform: translateX(0px);
+}
 
-.true{
+@media (min-width: 768px) {
+  .header {
+    width: 100%;
+  }
+  .header h4 {
+    font-size: 2em;
+  }
+  .header-logo {
+    width: 241px;
+    height: 87px;
+  }
+
+  .header nav {
+    width: 300px;
+    position: initial;
+    /* top is set to header height!*/
+    height: 55px;
+    transition: all 0.25s ease;
+    padding: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4px;
+    border-left: none;
+  }
+
+  .false {
     opacity: 1;
     transform: translateX(0px);
+  }
 
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .header li {
+    border-bottom: none;
+    border-left: none;
+    color: black;
+    margin: 0 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header .linkAnchorTag {
+    width: 100%;
+    text-decoration: none;
+    border-bottom: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header button {
+    display: none;
+  }
 }
 
-
-
-
-@media(min-width: 768px){
-    .header{
-        width: 100%; 
-    }
-    .header h4{
-        font-size: 2em; 
-    }
-    .header nav{
-        width: 300px; 
-        position: initial;
-        /* top is set to header height!*/ 
-        height: 55px;
-        transition: all .25s ease; 
-        padding:0; 
-        opacity: 1;
-        display: flex;
-        justify-content: space-around; 
-        align-items: center; 
-        margin-top: 4px; 
-        border-left: none;
-    }
-
-    .false{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    
-    .header ul{
-        display: flex; 
-        flex-direction: row;
-        justify-content: space-around; 
-        width: 100%; 
-    }
-    .header li{
-        border-bottom: none;
-        border-left: none;
-        color: black;
-        margin: 0 19px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .header .linkAnchorTag{
-        width: 100%;
-        text-decoration: none; 
-        border-bottom: none;
-        color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .header button{
-        display: none; 
-    }
-    
-}
-
-@media(min-width: 1000px){
-    .header h4 {
-        font-size: 3em;
-    }
-    .header nav{
-        margin-top: 7px;
-        height: 63px;
-    }
-    .header li{
-        font-size: 22px;
-        margin: 0 27px;
-    }
-    .header .linkAnchorTag{
-        color:black; 
-    }
-    .header li{
-        color:black; 
-    }
+@media (min-width: 1000px) {
+  #header {
+    height: 94px;
+    align-items: center;
+  }
+  .header-logo {
+    width: 286px;
+    height: 96px;
+    margin-left: 63px;
+  }
+  .header h4 {
+    font-size: 3em;
+  }
+  .header nav {
+    margin-top: 7px;
+    height: 63px;
+  }
+  .header li {
+    font-size: 22px;
+    margin: 0 27px;
+  }
+  .header .linkAnchorTag {
+    color: black;
+  }
+  .header li {
+    color: black;
+  }
 }
